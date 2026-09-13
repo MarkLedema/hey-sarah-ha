@@ -1,5 +1,5 @@
 name: "Hey Sarah openWakeWord"
-version: "1.0.2"
+version: "1.0.3"
 slug: "hey_sarah_openwakeword"
 description: "Dedicated Wyoming openWakeWord server for the Hey Sarah custom model"
 url: "https://github.com/MarkLedema/hey-sarah-ha"
