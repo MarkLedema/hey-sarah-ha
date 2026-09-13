@@ -10,5 +10,4 @@ LABEL \
     io.hass.type="app" \
     io.hass.arch="${BUILD_ARCH}"
 
-ENTRYPOINT ["bash", "/usr/src/docker_run.sh"]
 CMD ["--uri", "tcp://0.0.0.0:10401", "--custom-model-dir", "/share/openwakeword", "--threshold", "0.5", "--debug"]
