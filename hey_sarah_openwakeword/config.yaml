@@ -1,0 +1,17 @@
+name: "Hey Sarah openWakeWord"
+version: "1.0.0"
+slug: "hey_sarah_openwakeword"
+description: "Dedicated Wyoming openWakeWord server for the Hey Sarah custom model"
+url: "https://github.com/MarkLedema/hey-sarah-ha"
+arch:
+  - aarch64
+startup: application
+boot: manual
+init: false
+map:
+  - type: share
+    read_only: true
+ports:
+  10401/tcp: 10401
+ports_description:
+  10401/tcp: "Hey Sarah Wyoming Protocol"
