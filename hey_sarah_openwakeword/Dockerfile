@@ -10,4 +10,8 @@ LABEL \
     io.hass.type="app" \
     io.hass.arch="${BUILD_ARCH}"
 
+COPY run_hey_sarah.sh /run_hey_sarah.sh
+RUN chmod +x /run_hey_sarah.sh
+
+ENTRYPOINT ["bash", "/run_hey_sarah.sh"]
 CMD ["--uri", "tcp://0.0.0.0:10401", "--custom-model-dir", "/share/openwakeword", "--threshold", "0.5", "--debug"]
